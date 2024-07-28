@@ -1,4 +1,4 @@
-class Mutation::CreateUser < GraphQL::Schema::Mutation
+class Mutations::CreateUser < GraphQL::Schema::Mutation
   null true
 
   argument :name, String, required: true
@@ -17,3 +17,14 @@ class Mutation::CreateUser < GraphQL::Schema::Mutation
     end
   end
 end
+
+#     argument :name, String, required: true
+#     argument :email, String, required: true
+
+#     type Types::UserType
+
+#     def resolve(name:, email:)
+#       User.create!(name: name, email: email)
+#     end
+#   end
+# end
